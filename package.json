@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest --watchAll",
-    "start": "nodemon --exec babel-node lib/server.js",
+    "start": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd"
   },
   "author": "",
@@ -23,6 +23,7 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-polyfill": "^6.26.0",
