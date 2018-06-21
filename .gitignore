@@ -1,6 +1,6 @@
 # dependencies
 /node_modules
-/package-lock.json
+package-lock.json
 
-#bundle
-/public/bundle.js
+coverage/
+public/bundle.js
